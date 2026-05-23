@@ -1,0 +1,175 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#0f172a;
+  color:white;
+}
+
+header{
+  width:100%;
+  padding:20px 10%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:fixed;
+  top:0;
+  background:#0f172a;
+  z-index:1000;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:700;
+  color:#38bdf8;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:25px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#38bdf8;
+}
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:50px;
+  padding:120px 10%;
+  flex-wrap:wrap;
+}
+
+.hero-text{
+  flex:1;
+}
+
+.hero-text h1{
+  font-size:60px;
+}
+
+.hero-text span{
+  color:#38bdf8;
+}
+
+.hero-text h3{
+  margin:15px 0;
+  color:#94a3b8;
+}
+
+.hero-text p{
+  margin-bottom:25px;
+  max-width:500px;
+}
+
+.hero-image img{
+  width:350px;
+  border-radius:20px;
+  border:4px solid #38bdf8;
+}
+
+.btn{
+  display:inline-block;
+  padding:12px 28px;
+  background:#38bdf8;
+  color:#0f172a;
+  text-decoration:none;
+  border-radius:30px;
+  font-weight:600;
+}
+
+section{
+  padding:80px 10%;
+}
+
+.section-title{
+  text-align:center;
+  font-size:40px;
+  margin-bottom:50px;
+  color:#38bdf8;
+}
+
+.about-container,
+.skills-container,
+.projects-container,
+.contact-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.about-image img{
+  width:100%;
+  border-radius:20px;
+}
+
+.about-text p{
+  margin-top:15px;
+}
+
+.skill-box,
+.project-card,
+.contact-box{
+  background:#1e293b;
+  padding:25px;
+  border-radius:20px;
+  text-align:center;
+  transition:0.3s;
+}
+
+.skill-box:hover,
+.project-card:hover,
+.contact-box:hover{
+  transform:translateY(-10px);
+}
+
+.skill-box i,
+.contact-box i{
+  font-size:40px;
+  margin-bottom:15px;
+  color:#38bdf8;
+}
+
+.project-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:15px;
+}
+
+.project-content{
+  margin-top:20px;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#020617;
+  color:#94a3b8;
+}
+
+@media(max-width:768px){
+
+  .hero{
+    text-align:center;
+  }
+
+  .hero-text h1{
+    font-size:40px;
+  }
+
+  nav a{
+    margin-left:10px;
+    font-size:14px;
+  }
+
+}
